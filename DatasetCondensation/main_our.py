@@ -13,7 +13,7 @@ def main():
 
     parser = argparse.ArgumentParser(description='Parameter Processing')
     parser.add_argument('--method', type=str, default='DC', help='DC/DSA')
-    parser.add_argument('--dataset', type=str, default='MNIST_2CLS', help='dataset')
+    parser.add_argument('--dataset', type=str, default='CIFAR100', help='dataset')
     parser.add_argument('--model', type=str, default='MLP', help='model')
     parser.add_argument('--ipc', type=int, default=1, help='image(s) per class')
     parser.add_argument('--eval_mode', type=str, default='S', help='eval_mode') # S: the same to training model, M: multi architectures,  W: net width, D: net depth, A: activation function, P: pooling layer, N: normalization layer,
@@ -91,6 +91,11 @@ def main():
 
         if args.init == 'real':
             print('initialize synthetic data from random real images')
+            for c in range(num_classes):
+                image_syn.data[c*args.ipc:(c+1)*args.ipc] = get_images(c, args.ipc).detach().data
+
+        elif args.init == 'herding':
+            print('initialize synthetic data from selected images')
             for c in range(num_classes):
                 image_syn.data[c*args.ipc:(c+1)*args.ipc] = get_images(c, args.ipc).detach().data
         else:

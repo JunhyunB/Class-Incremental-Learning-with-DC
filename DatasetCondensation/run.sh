@@ -1,0 +1,11 @@
+python -u FGSM.py --dataset CIFAR100_herding --model ConvNet --Iteration 5 --init herding
+python -u FGSM.py --dataset CIFAR100_herding --model ConvNet --Iteration 10 --init herding
+python -u FGSM.py --dataset CIFAR100_herding --model ConvNet --Iteration 20 --init herding
+python -u FGSM.py --dataset CIFAR100_herding --model ConvNet --Iteration 30 --init herding
+python -u FGSM.py --dataset CIFAR100_herding --model ConvNet --Iteration 40 --init herding
+python -u FGSM.py --dataset CIFAR100_herding --model ConvNet --Iteration 50 --init herding
+python -u FGSM.py --dataset CIFAR100_herding --model ConvNet --Iteration 60 --init herding
+python -u FGSM.py --dataset CIFAR100_herding --model ConvNet --Iteration 70 --init herding
+python -u FGSM.py --dataset CIFAR100_herding --model ConvNet --Iteration 80 --init herding
+python -u FGSM.py --dataset CIFAR100_herding --model ConvNet --Iteration 90 --init herding
+python -u FGSM.py --dataset CIFAR100_herding --model ConvNet --Iteration 100 --init herding

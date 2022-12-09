@@ -9,7 +9,7 @@ from torchvision import datasets, transforms
 from scipy.ndimage.interpolation import rotate as scipyrotate
 from networks import MLP, ConvNet, LeNet, AlexNet, AlexNetBN, VGG11, VGG11BN, ResNet18, ResNet18BN_AP, ResNet18BN
 
-def get_dataset(dataset, data_path):
+def get_dataset(dataset, data_path, class_info=None):
     if dataset == 'MNIST':
         channel = 1
         im_size = (28, 28)
@@ -107,13 +107,49 @@ def get_dataset(dataset, data_path):
     elif dataset == 'CIFAR100_2CLS':
         channel = 3
         im_size = (32, 32)
-        num_classes = 10
+        num_classes = 20
         mean = [0.5071, 0.4866, 0.4409]
         std = [0.2673, 0.2564, 0.2762]
         transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize(mean=mean, std=std)])
         
         import random
         sample_class = random.sample(list(range(100)), 10)
+        mapping = dict(zip(sample_class, range(num_classes)))
+
+        dst_train = datasets.CIFAR100(data_path, train=True, download=True, transform=transform) # no augmentation
+        idx = None
+        for i in sample_class:
+            if idx is None:
+                idx = np.array(dst_train.targets) == i
+            else:
+                idx |= np.array(dst_train.targets) == i
+        
+        refined_targets = [mapping[v] for v in list(np.array(dst_train.targets)[idx])]
+        dst_train.targets = refined_targets
+        dst_train.data = dst_train.data[idx]
+
+        dst_test = datasets.CIFAR100(data_path, train=False, download=True, transform=transform)
+        idx = None
+        for i in sample_class:
+            if idx is None:
+                idx = np.array(dst_test.targets) == i
+            else:
+                idx |= np.array(dst_test.targets) == i
+
+        refined_targets = [mapping[v] for v in list(np.array(dst_test.targets)[idx])]
+        dst_test.targets = refined_targets
+        dst_test.data = dst_test.data[idx]
+        class_names = dst_train.classes
+
+    elif dataset == 'CIFAR100_herding':
+        channel = 3
+        im_size = (32, 32)
+        num_classes = 20
+        mean = [0.5071, 0.4866, 0.4409]
+        std = [0.2673, 0.2564, 0.2762]
+        transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize(mean=mean, std=std)])
+        
+        sample_class = class_info
         mapping = dict(zip(sample_class, range(num_classes)))
 
         dst_train = datasets.CIFAR100(data_path, train=True, download=True, transform=transform) # no augmentation
@@ -724,4 +760,3 @@ AUGMENT_FNS = {
     'scale': [rand_scale],
     'rotate': [rand_rotate],
 }
-

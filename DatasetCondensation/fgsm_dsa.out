@@ -1,0 +1,1892 @@
+nohup: ignoring input
+eval_it_pool:  [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 250, 260, 270, 280, 290, 300]
+Files already downloaded and verified
+Files already downloaded and verified
+
+================== Exp 0 ==================
+ 
+Hyper-parameters: 
+ {'method': 'DSA', 'dataset': 'CIFAR100_herding', 'model': 'ConvNet', 'ipc': 10, 'eval_mode': 'S', 'num_exp': 1, 'num_eval': 1, 'epoch_eval_train': 5, 'Iteration': 300, 'lr_img': 0.1, 'lr_net': 0.01, 'batch_real': 256, 'batch_train': 256, 'init': 'herding', 'dsa_strategy': 'None', 'data_path': '../data', 'save_path': 'result', 'dis_metric': 'ours', 'epsilon': 0.1, 'alpha': 0.05, 'outer_loop': 10, 'inner_loop': 50, 'device': 'cuda', 'dsa_param': <utils.ParamDiffAug object at 0x7f0e9b8e5b40>, 'dsa': True}
+Evaluation model pool:  ['ConvNet']
+class c = 0: 500 real images
+class c = 1: 500 real images
+class c = 2: 500 real images
+class c = 3: 500 real images
+class c = 4: 500 real images
+class c = 5: 500 real images
+class c = 6: 500 real images
+class c = 7: 500 real images
+class c = 8: 500 real images
+class c = 9: 500 real images
+class c = 10: 500 real images
+class c = 11: 500 real images
+class c = 12: 500 real images
+class c = 13: 500 real images
+class c = 14: 500 real images
+class c = 15: 500 real images
+class c = 16: 500 real images
+class c = 17: 500 real images
+class c = 18: 500 real images
+class c = 19: 500 real images
+real images channel 0, mean = -0.0088, std = 1.0712
+real images channel 1, mean = 0.0225, std = 1.0229
+real images channel 2, mean = 0.0758, std = 1.0134
+initialize synthetic data from selected images
+[2022-12-08 15:59:30] training begins
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 0
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 15:59:57] Evaluate_00: epoch = 1000 train time = 25 s train loss = 0.003643 train acc = 1.0000, test acc = 0.0710
+Evaluate 1 random ConvNet, mean = 0.0710 std = 0.0000
+-------------------------
+[2022-12-08 16:00:16] iter = 0000, loss = 215.8646
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 10
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:03:35] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003665 train acc = 1.0000, test acc = 0.0860
+Evaluate 1 random ConvNet, mean = 0.0860 std = 0.0000
+-------------------------
+[2022-12-08 16:03:54] iter = 0010, loss = 203.3631
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 20
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:07:12] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003581 train acc = 1.0000, test acc = 0.0830
+Evaluate 1 random ConvNet, mean = 0.0830 std = 0.0000
+-------------------------
+[2022-12-08 16:07:32] iter = 0020, loss = 205.0882
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 30
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:10:50] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003651 train acc = 1.0000, test acc = 0.0850
+Evaluate 1 random ConvNet, mean = 0.0850 std = 0.0000
+-------------------------
+[2022-12-08 16:11:09] iter = 0030, loss = 205.5676
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 40
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:14:27] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003588 train acc = 1.0000, test acc = 0.0840
+Evaluate 1 random ConvNet, mean = 0.0840 std = 0.0000
+-------------------------
+[2022-12-08 16:14:47] iter = 0040, loss = 202.4489
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 50
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:18:05] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003645 train acc = 1.0000, test acc = 0.0830
+Evaluate 1 random ConvNet, mean = 0.0830 std = 0.0000
+-------------------------
+[2022-12-08 16:18:25] iter = 0050, loss = 206.9075
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 60
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:21:43] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003614 train acc = 1.0000, test acc = 0.0850
+Evaluate 1 random ConvNet, mean = 0.0850 std = 0.0000
+-------------------------
+[2022-12-08 16:22:03] iter = 0060, loss = 207.7550
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 70
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:25:21] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003652 train acc = 1.0000, test acc = 0.0895
+Evaluate 1 random ConvNet, mean = 0.0895 std = 0.0000
+-------------------------
+[2022-12-08 16:25:41] iter = 0070, loss = 204.1679
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 80
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:29:00] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003636 train acc = 1.0000, test acc = 0.0810
+Evaluate 1 random ConvNet, mean = 0.0810 std = 0.0000
+-------------------------
+[2022-12-08 16:29:20] iter = 0080, loss = 201.2530
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 90
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:32:39] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003632 train acc = 1.0000, test acc = 0.0890
+Evaluate 1 random ConvNet, mean = 0.0890 std = 0.0000
+-------------------------
+[2022-12-08 16:32:58] iter = 0090, loss = 208.7232
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 100
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:36:17] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003645 train acc = 1.0000, test acc = 0.0875
+Evaluate 1 random ConvNet, mean = 0.0875 std = 0.0000
+-------------------------
+[2022-12-08 16:36:36] iter = 0100, loss = 205.9135
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 110
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:39:55] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003626 train acc = 1.0000, test acc = 0.0865
+Evaluate 1 random ConvNet, mean = 0.0865 std = 0.0000
+-------------------------
+[2022-12-08 16:40:15] iter = 0110, loss = 204.8868
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 120
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:43:34] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003581 train acc = 1.0000, test acc = 0.0865
+Evaluate 1 random ConvNet, mean = 0.0865 std = 0.0000
+-------------------------
+[2022-12-08 16:43:53] iter = 0120, loss = 206.9211
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 130
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:47:12] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003556 train acc = 1.0000, test acc = 0.0860
+Evaluate 1 random ConvNet, mean = 0.0860 std = 0.0000
+-------------------------
+[2022-12-08 16:47:31] iter = 0130, loss = 202.3135
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 140
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:50:50] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003591 train acc = 1.0000, test acc = 0.0845
+Evaluate 1 random ConvNet, mean = 0.0845 std = 0.0000
+-------------------------
+[2022-12-08 16:51:09] iter = 0140, loss = 207.3101
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 150
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:54:28] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003675 train acc = 1.0000, test acc = 0.0860
+Evaluate 1 random ConvNet, mean = 0.0860 std = 0.0000
+-------------------------
+[2022-12-08 16:54:48] iter = 0150, loss = 199.6998
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 160
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 16:58:07] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003556 train acc = 1.0000, test acc = 0.0870
+Evaluate 1 random ConvNet, mean = 0.0870 std = 0.0000
+-------------------------
+[2022-12-08 16:58:26] iter = 0160, loss = 202.2311
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 170
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:01:45] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003583 train acc = 1.0000, test acc = 0.0835
+Evaluate 1 random ConvNet, mean = 0.0835 std = 0.0000
+-------------------------
+[2022-12-08 17:02:04] iter = 0170, loss = 200.3019
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 180
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:05:23] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003662 train acc = 1.0000, test acc = 0.0870
+Evaluate 1 random ConvNet, mean = 0.0870 std = 0.0000
+-------------------------
+[2022-12-08 17:05:43] iter = 0180, loss = 207.5767
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 190
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:09:02] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003695 train acc = 1.0000, test acc = 0.0935
+Evaluate 1 random ConvNet, mean = 0.0935 std = 0.0000
+-------------------------
+[2022-12-08 17:09:22] iter = 0190, loss = 202.2767
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 200
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:12:41] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003623 train acc = 1.0000, test acc = 0.0850
+Evaluate 1 random ConvNet, mean = 0.0850 std = 0.0000
+-------------------------
+[2022-12-08 17:13:00] iter = 0200, loss = 202.6374
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 210
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:16:19] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003589 train acc = 1.0000, test acc = 0.0845
+Evaluate 1 random ConvNet, mean = 0.0845 std = 0.0000
+-------------------------
+[2022-12-08 17:16:39] iter = 0210, loss = 207.2250
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 220
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:19:57] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003647 train acc = 1.0000, test acc = 0.0805
+Evaluate 1 random ConvNet, mean = 0.0805 std = 0.0000
+-------------------------
+[2022-12-08 17:20:17] iter = 0220, loss = 205.4381
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 230
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:23:36] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003571 train acc = 1.0000, test acc = 0.0950
+Evaluate 1 random ConvNet, mean = 0.0950 std = 0.0000
+-------------------------
+[2022-12-08 17:23:56] iter = 0230, loss = 206.2109
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 240
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:27:15] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003663 train acc = 1.0000, test acc = 0.0830
+Evaluate 1 random ConvNet, mean = 0.0830 std = 0.0000
+-------------------------
+[2022-12-08 17:27:35] iter = 0240, loss = 204.6545
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 250
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:30:54] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003525 train acc = 1.0000, test acc = 0.0840
+Evaluate 1 random ConvNet, mean = 0.0840 std = 0.0000
+-------------------------
+[2022-12-08 17:31:13] iter = 0250, loss = 204.1053
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 260
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:34:32] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003642 train acc = 1.0000, test acc = 0.0800
+Evaluate 1 random ConvNet, mean = 0.0800 std = 0.0000
+-------------------------
+[2022-12-08 17:34:52] iter = 0260, loss = 207.2686
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 270
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:38:10] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003606 train acc = 1.0000, test acc = 0.0820
+Evaluate 1 random ConvNet, mean = 0.0820 std = 0.0000
+-------------------------
+[2022-12-08 17:38:30] iter = 0270, loss = 206.1454
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 280
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:41:49] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003550 train acc = 1.0000, test acc = 0.0905
+Evaluate 1 random ConvNet, mean = 0.0905 std = 0.0000
+-------------------------
+[2022-12-08 17:42:08] iter = 0280, loss = 207.1460
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 290
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:45:27] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003618 train acc = 1.0000, test acc = 0.0770
+Evaluate 1 random ConvNet, mean = 0.0770 std = 0.0000
+-------------------------
+[2022-12-08 17:45:46] iter = 0290, loss = 207.0666
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 300
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:49:04] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003544 train acc = 1.0000, test acc = 0.0875
+Evaluate 1 random ConvNet, mean = 0.0875 std = 0.0000
+-------------------------
+[2022-12-08 17:49:24] iter = 0300, loss = 204.0968
+
+==================== Final Results ====================
+
+Run 1 experiments, train on ConvNet, evaluate 1 random ConvNet, mean  = 8.75%  std = 0.00%
+Files already downloaded and verified
+Files already downloaded and verified
+
+================== Exp 0 ==================
+ 
+Hyper-parameters: 
+ {'method': 'DSA', 'dataset': 'CIFAR100_herding', 'model': 'ConvNet', 'ipc': 10, 'eval_mode': 'S', 'num_exp': 1, 'num_eval': 1, 'epoch_eval_train': 1000, 'Iteration': 300, 'lr_img': 0.1, 'lr_net': 0.01, 'batch_real': 256, 'batch_train': 256, 'init': 'herding', 'dsa_strategy': 'None', 'data_path': '../data', 'save_path': 'result', 'dis_metric': 'ours', 'epsilon': 0.1, 'alpha': 0.05, 'outer_loop': 10, 'inner_loop': 50, 'device': 'cuda', 'dsa_param': <utils.ParamDiffAug object at 0x7f0e9b8e5b40>, 'dsa': True, 'dc_aug_param': None}
+Evaluation model pool:  ['ConvNet']
+class c = 0: 500 real images
+class c = 1: 500 real images
+class c = 2: 500 real images
+class c = 3: 500 real images
+class c = 4: 500 real images
+class c = 5: 500 real images
+class c = 6: 500 real images
+class c = 7: 500 real images
+class c = 8: 500 real images
+class c = 9: 500 real images
+class c = 10: 500 real images
+class c = 11: 500 real images
+class c = 12: 500 real images
+class c = 13: 500 real images
+class c = 14: 500 real images
+class c = 15: 500 real images
+class c = 16: 500 real images
+class c = 17: 500 real images
+class c = 18: 500 real images
+class c = 19: 500 real images
+real images channel 0, mean = -0.0643, std = 0.9384
+real images channel 1, mean = -0.0533, std = 0.9383
+real images channel 2, mean = -0.1090, std = 0.9705
+initialize synthetic data from selected images
+[2022-12-08 17:49:29] training begins
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 0
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:49:55] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003652 train acc = 1.0000, test acc = 0.0460
+Evaluate 1 random ConvNet, mean = 0.0460 std = 0.0000
+-------------------------
+[2022-12-08 17:50:14] iter = 0000, loss = 231.4983
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 10
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:53:32] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003543 train acc = 1.0000, test acc = 0.0575
+Evaluate 1 random ConvNet, mean = 0.0575 std = 0.0000
+-------------------------
+[2022-12-08 17:53:52] iter = 0010, loss = 213.3290
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 20
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 17:57:10] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003624 train acc = 1.0000, test acc = 0.0560
+Evaluate 1 random ConvNet, mean = 0.0560 std = 0.0000
+-------------------------
+[2022-12-08 17:57:29] iter = 0020, loss = 212.7972
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 30
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:00:48] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003568 train acc = 1.0000, test acc = 0.0630
+Evaluate 1 random ConvNet, mean = 0.0630 std = 0.0000
+-------------------------
+[2022-12-08 18:01:07] iter = 0030, loss = 216.4445
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 40
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:04:26] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003604 train acc = 1.0000, test acc = 0.0555
+Evaluate 1 random ConvNet, mean = 0.0555 std = 0.0000
+-------------------------
+[2022-12-08 18:04:45] iter = 0040, loss = 215.9043
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 50
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:08:04] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003626 train acc = 1.0000, test acc = 0.0535
+Evaluate 1 random ConvNet, mean = 0.0535 std = 0.0000
+-------------------------
+[2022-12-08 18:08:23] iter = 0050, loss = 214.4227
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 60
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:11:41] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003615 train acc = 1.0000, test acc = 0.0630
+Evaluate 1 random ConvNet, mean = 0.0630 std = 0.0000
+-------------------------
+[2022-12-08 18:12:01] iter = 0060, loss = 213.1022
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 70
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:15:18] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003571 train acc = 1.0000, test acc = 0.0540
+Evaluate 1 random ConvNet, mean = 0.0540 std = 0.0000
+-------------------------
+[2022-12-08 18:15:38] iter = 0070, loss = 211.4712
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 80
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:18:56] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003631 train acc = 1.0000, test acc = 0.0555
+Evaluate 1 random ConvNet, mean = 0.0555 std = 0.0000
+-------------------------
+[2022-12-08 18:19:15] iter = 0080, loss = 214.9203
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 90
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:22:34] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003548 train acc = 1.0000, test acc = 0.0640
+Evaluate 1 random ConvNet, mean = 0.0640 std = 0.0000
+-------------------------
+[2022-12-08 18:22:53] iter = 0090, loss = 213.0165
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 100
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:26:12] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003636 train acc = 1.0000, test acc = 0.0525
+Evaluate 1 random ConvNet, mean = 0.0525 std = 0.0000
+-------------------------
+[2022-12-08 18:26:32] iter = 0100, loss = 212.2184
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 110
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:29:50] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003624 train acc = 1.0000, test acc = 0.0540
+Evaluate 1 random ConvNet, mean = 0.0540 std = 0.0000
+-------------------------
+[2022-12-08 18:30:10] iter = 0110, loss = 211.0583
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 120
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:33:29] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003559 train acc = 1.0000, test acc = 0.0545
+Evaluate 1 random ConvNet, mean = 0.0545 std = 0.0000
+-------------------------
+[2022-12-08 18:33:48] iter = 0120, loss = 213.4424
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 130
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:37:07] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003637 train acc = 1.0000, test acc = 0.0530
+Evaluate 1 random ConvNet, mean = 0.0530 std = 0.0000
+-------------------------
+[2022-12-08 18:37:27] iter = 0130, loss = 212.6652
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 140
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:40:45] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003570 train acc = 1.0000, test acc = 0.0595
+Evaluate 1 random ConvNet, mean = 0.0595 std = 0.0000
+-------------------------
+[2022-12-08 18:41:05] iter = 0140, loss = 216.2819
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 150
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:44:25] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003491 train acc = 1.0000, test acc = 0.0520
+Evaluate 1 random ConvNet, mean = 0.0520 std = 0.0000
+-------------------------
+[2022-12-08 18:44:44] iter = 0150, loss = 215.6009
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 160
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:48:03] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003550 train acc = 1.0000, test acc = 0.0550
+Evaluate 1 random ConvNet, mean = 0.0550 std = 0.0000
+-------------------------
+[2022-12-08 18:48:23] iter = 0160, loss = 216.4831
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 170
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:51:41] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003557 train acc = 1.0000, test acc = 0.0620
+Evaluate 1 random ConvNet, mean = 0.0620 std = 0.0000
+-------------------------
+[2022-12-08 18:52:01] iter = 0170, loss = 212.6415
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 180
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:55:20] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003561 train acc = 1.0000, test acc = 0.0625
+Evaluate 1 random ConvNet, mean = 0.0625 std = 0.0000
+-------------------------
+[2022-12-08 18:55:39] iter = 0180, loss = 216.0544
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 190
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 18:58:58] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003539 train acc = 1.0000, test acc = 0.0525
+Evaluate 1 random ConvNet, mean = 0.0525 std = 0.0000
+-------------------------
+[2022-12-08 18:59:17] iter = 0190, loss = 216.3290
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 200
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:02:36] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003628 train acc = 1.0000, test acc = 0.0580
+Evaluate 1 random ConvNet, mean = 0.0580 std = 0.0000
+-------------------------
+[2022-12-08 19:02:56] iter = 0200, loss = 214.4155
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 210
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:06:15] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003589 train acc = 1.0000, test acc = 0.0550
+Evaluate 1 random ConvNet, mean = 0.0550 std = 0.0000
+-------------------------
+[2022-12-08 19:06:34] iter = 0210, loss = 211.7044
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 220
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:09:55] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003520 train acc = 1.0000, test acc = 0.0545
+Evaluate 1 random ConvNet, mean = 0.0545 std = 0.0000
+-------------------------
+[2022-12-08 19:10:15] iter = 0220, loss = 216.2637
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 230
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:13:34] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003472 train acc = 1.0000, test acc = 0.0590
+Evaluate 1 random ConvNet, mean = 0.0590 std = 0.0000
+-------------------------
+[2022-12-08 19:13:54] iter = 0230, loss = 220.9628
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 240
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:17:14] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003605 train acc = 1.0000, test acc = 0.0565
+Evaluate 1 random ConvNet, mean = 0.0565 std = 0.0000
+-------------------------
+[2022-12-08 19:17:34] iter = 0240, loss = 213.6644
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 250
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:20:54] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003555 train acc = 1.0000, test acc = 0.0520
+Evaluate 1 random ConvNet, mean = 0.0520 std = 0.0000
+-------------------------
+[2022-12-08 19:21:14] iter = 0250, loss = 213.8121
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 260
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:24:34] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003561 train acc = 1.0000, test acc = 0.0610
+Evaluate 1 random ConvNet, mean = 0.0610 std = 0.0000
+-------------------------
+[2022-12-08 19:24:53] iter = 0260, loss = 215.3053
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 270
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:28:12] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003493 train acc = 1.0000, test acc = 0.0585
+Evaluate 1 random ConvNet, mean = 0.0585 std = 0.0000
+-------------------------
+[2022-12-08 19:28:32] iter = 0270, loss = 207.2190
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 280
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:31:51] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003570 train acc = 1.0000, test acc = 0.0585
+Evaluate 1 random ConvNet, mean = 0.0585 std = 0.0000
+-------------------------
+[2022-12-08 19:32:10] iter = 0280, loss = 212.8142
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 290
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:35:29] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003561 train acc = 1.0000, test acc = 0.0580
+Evaluate 1 random ConvNet, mean = 0.0580 std = 0.0000
+-------------------------
+[2022-12-08 19:35:49] iter = 0290, loss = 213.8474
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 300
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:39:08] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003573 train acc = 1.0000, test acc = 0.0570
+Evaluate 1 random ConvNet, mean = 0.0570 std = 0.0000
+-------------------------
+[2022-12-08 19:39:28] iter = 0300, loss = 216.9661
+
+==================== Final Results ====================
+
+Run 1 experiments, train on ConvNet, evaluate 1 random ConvNet, mean  = 5.70%  std = 0.00%
+Files already downloaded and verified
+Files already downloaded and verified
+
+================== Exp 0 ==================
+ 
+Hyper-parameters: 
+ {'method': 'DSA', 'dataset': 'CIFAR100_herding', 'model': 'ConvNet', 'ipc': 10, 'eval_mode': 'S', 'num_exp': 1, 'num_eval': 1, 'epoch_eval_train': 1000, 'Iteration': 300, 'lr_img': 0.1, 'lr_net': 0.01, 'batch_real': 256, 'batch_train': 256, 'init': 'herding', 'dsa_strategy': 'None', 'data_path': '../data', 'save_path': 'result', 'dis_metric': 'ours', 'epsilon': 0.1, 'alpha': 0.05, 'outer_loop': 10, 'inner_loop': 50, 'device': 'cuda', 'dsa_param': <utils.ParamDiffAug object at 0x7f0e9b8e5b40>, 'dsa': True, 'dc_aug_param': None}
+Evaluation model pool:  ['ConvNet']
+class c = 0: 500 real images
+class c = 1: 500 real images
+class c = 2: 500 real images
+class c = 3: 500 real images
+class c = 4: 500 real images
+class c = 5: 500 real images
+class c = 6: 500 real images
+class c = 7: 500 real images
+class c = 8: 500 real images
+class c = 9: 500 real images
+class c = 10: 500 real images
+class c = 11: 500 real images
+class c = 12: 500 real images
+class c = 13: 500 real images
+class c = 14: 500 real images
+class c = 15: 500 real images
+class c = 16: 500 real images
+class c = 17: 500 real images
+class c = 18: 500 real images
+class c = 19: 500 real images
+real images channel 0, mean = 0.0572, std = 0.9945
+real images channel 1, mean = 0.0396, std = 1.0209
+real images channel 2, mean = 0.0503, std = 1.0143
+initialize synthetic data from selected images
+[2022-12-08 19:39:33] training begins
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 0
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:39:59] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003683 train acc = 1.0000, test acc = 0.0925
+Evaluate 1 random ConvNet, mean = 0.0925 std = 0.0000
+-------------------------
+[2022-12-08 19:40:18] iter = 0000, loss = 240.1104
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 10
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:43:38] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003525 train acc = 1.0000, test acc = 0.1055
+Evaluate 1 random ConvNet, mean = 0.1055 std = 0.0000
+-------------------------
+[2022-12-08 19:43:57] iter = 0010, loss = 220.5730
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 20
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:47:16] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003633 train acc = 1.0000, test acc = 0.1090
+Evaluate 1 random ConvNet, mean = 0.1090 std = 0.0000
+-------------------------
+[2022-12-08 19:47:36] iter = 0020, loss = 223.1247
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 30
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:50:55] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003574 train acc = 1.0000, test acc = 0.1060
+Evaluate 1 random ConvNet, mean = 0.1060 std = 0.0000
+-------------------------
+[2022-12-08 19:51:15] iter = 0030, loss = 222.6076
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 40
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:54:35] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003621 train acc = 1.0000, test acc = 0.1080
+Evaluate 1 random ConvNet, mean = 0.1080 std = 0.0000
+-------------------------
+[2022-12-08 19:54:54] iter = 0040, loss = 227.2466
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 50
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 19:58:13] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003637 train acc = 1.0000, test acc = 0.1075
+Evaluate 1 random ConvNet, mean = 0.1075 std = 0.0000
+-------------------------
+[2022-12-08 19:58:33] iter = 0050, loss = 221.5752
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 60
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:01:51] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003533 train acc = 1.0000, test acc = 0.1090
+Evaluate 1 random ConvNet, mean = 0.1090 std = 0.0000
+-------------------------
+[2022-12-08 20:02:11] iter = 0060, loss = 222.3584
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 70
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:05:29] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003647 train acc = 1.0000, test acc = 0.1050
+Evaluate 1 random ConvNet, mean = 0.1050 std = 0.0000
+-------------------------
+[2022-12-08 20:05:49] iter = 0070, loss = 220.7958
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 80
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:09:08] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003585 train acc = 1.0000, test acc = 0.1040
+Evaluate 1 random ConvNet, mean = 0.1040 std = 0.0000
+-------------------------
+[2022-12-08 20:09:28] iter = 0080, loss = 222.1240
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 90
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:12:48] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003606 train acc = 1.0000, test acc = 0.1010
+Evaluate 1 random ConvNet, mean = 0.1010 std = 0.0000
+-------------------------
+[2022-12-08 20:13:08] iter = 0090, loss = 223.8722
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 100
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:16:28] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003603 train acc = 1.0000, test acc = 0.1075
+Evaluate 1 random ConvNet, mean = 0.1075 std = 0.0000
+-------------------------
+[2022-12-08 20:16:48] iter = 0100, loss = 224.1796
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 110
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:20:08] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003584 train acc = 1.0000, test acc = 0.1065
+Evaluate 1 random ConvNet, mean = 0.1065 std = 0.0000
+-------------------------
+[2022-12-08 20:20:27] iter = 0110, loss = 220.5173
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 120
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:23:47] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003594 train acc = 1.0000, test acc = 0.1100
+Evaluate 1 random ConvNet, mean = 0.1100 std = 0.0000
+-------------------------
+[2022-12-08 20:24:06] iter = 0120, loss = 222.8631
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 130
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:27:27] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003568 train acc = 1.0000, test acc = 0.1075
+Evaluate 1 random ConvNet, mean = 0.1075 std = 0.0000
+-------------------------
+[2022-12-08 20:27:47] iter = 0130, loss = 222.8632
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 140
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:31:07] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003502 train acc = 1.0000, test acc = 0.1035
+Evaluate 1 random ConvNet, mean = 0.1035 std = 0.0000
+-------------------------
+[2022-12-08 20:31:26] iter = 0140, loss = 223.9387
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 150
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:34:47] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003643 train acc = 1.0000, test acc = 0.1060
+Evaluate 1 random ConvNet, mean = 0.1060 std = 0.0000
+-------------------------
+[2022-12-08 20:35:06] iter = 0150, loss = 222.9090
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 160
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:38:26] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003557 train acc = 1.0000, test acc = 0.1065
+Evaluate 1 random ConvNet, mean = 0.1065 std = 0.0000
+-------------------------
+[2022-12-08 20:38:45] iter = 0160, loss = 227.5626
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 170
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:42:05] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003569 train acc = 1.0000, test acc = 0.1050
+Evaluate 1 random ConvNet, mean = 0.1050 std = 0.0000
+-------------------------
+[2022-12-08 20:42:25] iter = 0170, loss = 223.1188
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 180
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:45:45] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003620 train acc = 1.0000, test acc = 0.1020
+Evaluate 1 random ConvNet, mean = 0.1020 std = 0.0000
+-------------------------
+[2022-12-08 20:46:04] iter = 0180, loss = 224.8510
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 190
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:49:25] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003753 train acc = 1.0000, test acc = 0.1070
+Evaluate 1 random ConvNet, mean = 0.1070 std = 0.0000
+-------------------------
+[2022-12-08 20:49:44] iter = 0190, loss = 227.1217
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 200
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:53:04] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003667 train acc = 1.0000, test acc = 0.1130
+Evaluate 1 random ConvNet, mean = 0.1130 std = 0.0000
+-------------------------
+[2022-12-08 20:53:23] iter = 0200, loss = 220.4197
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 210
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 20:56:43] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003621 train acc = 1.0000, test acc = 0.1070
+Evaluate 1 random ConvNet, mean = 0.1070 std = 0.0000
+-------------------------
+[2022-12-08 20:57:03] iter = 0210, loss = 213.5086
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 220
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:00:22] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003622 train acc = 1.0000, test acc = 0.1035
+Evaluate 1 random ConvNet, mean = 0.1035 std = 0.0000
+-------------------------
+[2022-12-08 21:00:42] iter = 0220, loss = 223.2288
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 230
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:04:02] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003659 train acc = 1.0000, test acc = 0.0990
+Evaluate 1 random ConvNet, mean = 0.0990 std = 0.0000
+-------------------------
+[2022-12-08 21:04:21] iter = 0230, loss = 218.1730
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 240
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:07:41] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003613 train acc = 1.0000, test acc = 0.1030
+Evaluate 1 random ConvNet, mean = 0.1030 std = 0.0000
+-------------------------
+[2022-12-08 21:08:00] iter = 0240, loss = 221.7990
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 250
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:11:20] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003589 train acc = 1.0000, test acc = 0.1060
+Evaluate 1 random ConvNet, mean = 0.1060 std = 0.0000
+-------------------------
+[2022-12-08 21:11:39] iter = 0250, loss = 221.6457
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 260
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:14:59] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003652 train acc = 1.0000, test acc = 0.1010
+Evaluate 1 random ConvNet, mean = 0.1010 std = 0.0000
+-------------------------
+[2022-12-08 21:15:18] iter = 0260, loss = 222.4054
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 270
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:18:37] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003549 train acc = 1.0000, test acc = 0.0990
+Evaluate 1 random ConvNet, mean = 0.0990 std = 0.0000
+-------------------------
+[2022-12-08 21:18:56] iter = 0270, loss = 222.6897
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 280
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:22:16] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003615 train acc = 1.0000, test acc = 0.1145
+Evaluate 1 random ConvNet, mean = 0.1145 std = 0.0000
+-------------------------
+[2022-12-08 21:22:35] iter = 0280, loss = 221.3408
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 290
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:25:55] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003549 train acc = 1.0000, test acc = 0.1065
+Evaluate 1 random ConvNet, mean = 0.1065 std = 0.0000
+-------------------------
+[2022-12-08 21:26:15] iter = 0290, loss = 224.5276
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 300
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:29:35] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003523 train acc = 1.0000, test acc = 0.1085
+Evaluate 1 random ConvNet, mean = 0.1085 std = 0.0000
+-------------------------
+[2022-12-08 21:29:54] iter = 0300, loss = 222.7736
+
+==================== Final Results ====================
+
+Run 1 experiments, train on ConvNet, evaluate 1 random ConvNet, mean  = 10.85%  std = 0.00%
+Files already downloaded and verified
+Files already downloaded and verified
+
+================== Exp 0 ==================
+ 
+Hyper-parameters: 
+ {'method': 'DSA', 'dataset': 'CIFAR100_herding', 'model': 'ConvNet', 'ipc': 10, 'eval_mode': 'S', 'num_exp': 1, 'num_eval': 1, 'epoch_eval_train': 1000, 'Iteration': 300, 'lr_img': 0.1, 'lr_net': 0.01, 'batch_real': 256, 'batch_train': 256, 'init': 'herding', 'dsa_strategy': 'None', 'data_path': '../data', 'save_path': 'result', 'dis_metric': 'ours', 'epsilon': 0.1, 'alpha': 0.05, 'outer_loop': 10, 'inner_loop': 50, 'device': 'cuda', 'dsa_param': <utils.ParamDiffAug object at 0x7f0e9b8e5b40>, 'dsa': True, 'dc_aug_param': None}
+Evaluation model pool:  ['ConvNet']
+class c = 0: 500 real images
+class c = 1: 500 real images
+class c = 2: 500 real images
+class c = 3: 500 real images
+class c = 4: 500 real images
+class c = 5: 500 real images
+class c = 6: 500 real images
+class c = 7: 500 real images
+class c = 8: 500 real images
+class c = 9: 500 real images
+class c = 10: 500 real images
+class c = 11: 500 real images
+class c = 12: 500 real images
+class c = 13: 500 real images
+class c = 14: 500 real images
+class c = 15: 500 real images
+class c = 16: 500 real images
+class c = 17: 500 real images
+class c = 18: 500 real images
+class c = 19: 500 real images
+real images channel 0, mean = 0.0559, std = 0.9929
+real images channel 1, mean = 0.0512, std = 1.0150
+real images channel 2, mean = 0.0357, std = 1.0088
+initialize synthetic data from selected images
+[2022-12-08 21:30:00] training begins
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 0
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:30:25] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003769 train acc = 1.0000, test acc = 0.0605
+Evaluate 1 random ConvNet, mean = 0.0605 std = 0.0000
+-------------------------
+[2022-12-08 21:30:45] iter = 0000, loss = 228.9803
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 10
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:34:04] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003674 train acc = 1.0000, test acc = 0.0800
+Evaluate 1 random ConvNet, mean = 0.0800 std = 0.0000
+-------------------------
+[2022-12-08 21:34:24] iter = 0010, loss = 210.2623
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 20
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:37:43] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003760 train acc = 1.0000, test acc = 0.0795
+Evaluate 1 random ConvNet, mean = 0.0795 std = 0.0000
+-------------------------
+[2022-12-08 21:38:02] iter = 0020, loss = 208.2247
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 30
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:41:21] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003768 train acc = 1.0000, test acc = 0.0825
+Evaluate 1 random ConvNet, mean = 0.0825 std = 0.0000
+-------------------------
+[2022-12-08 21:41:40] iter = 0030, loss = 210.5783
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 40
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:45:00] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003774 train acc = 1.0000, test acc = 0.0930
+Evaluate 1 random ConvNet, mean = 0.0930 std = 0.0000
+-------------------------
+[2022-12-08 21:45:20] iter = 0040, loss = 209.9737
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 50
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:48:39] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003724 train acc = 1.0000, test acc = 0.0905
+Evaluate 1 random ConvNet, mean = 0.0905 std = 0.0000
+-------------------------
+[2022-12-08 21:48:58] iter = 0050, loss = 207.5582
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 60
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:52:17] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003691 train acc = 1.0000, test acc = 0.0940
+Evaluate 1 random ConvNet, mean = 0.0940 std = 0.0000
+-------------------------
+[2022-12-08 21:52:36] iter = 0060, loss = 209.0328
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 70
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:55:56] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003684 train acc = 1.0000, test acc = 0.0790
+Evaluate 1 random ConvNet, mean = 0.0790 std = 0.0000
+-------------------------
+[2022-12-08 21:56:16] iter = 0070, loss = 208.1296
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 80
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 21:59:36] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003695 train acc = 1.0000, test acc = 0.0795
+Evaluate 1 random ConvNet, mean = 0.0795 std = 0.0000
+-------------------------
+[2022-12-08 21:59:55] iter = 0080, loss = 206.6471
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 90
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:03:15] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003726 train acc = 1.0000, test acc = 0.0800
+Evaluate 1 random ConvNet, mean = 0.0800 std = 0.0000
+-------------------------
+[2022-12-08 22:03:34] iter = 0090, loss = 211.0829
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 100
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:06:54] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003646 train acc = 1.0000, test acc = 0.0905
+Evaluate 1 random ConvNet, mean = 0.0905 std = 0.0000
+-------------------------
+[2022-12-08 22:07:13] iter = 0100, loss = 211.7419
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 110
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:10:33] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003573 train acc = 1.0000, test acc = 0.0935
+Evaluate 1 random ConvNet, mean = 0.0935 std = 0.0000
+-------------------------
+[2022-12-08 22:10:52] iter = 0110, loss = 208.9186
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 120
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:14:12] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003713 train acc = 1.0000, test acc = 0.0770
+Evaluate 1 random ConvNet, mean = 0.0770 std = 0.0000
+-------------------------
+[2022-12-08 22:14:31] iter = 0120, loss = 207.2091
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 130
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:17:51] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003670 train acc = 1.0000, test acc = 0.0730
+Evaluate 1 random ConvNet, mean = 0.0730 std = 0.0000
+-------------------------
+[2022-12-08 22:18:10] iter = 0130, loss = 211.5194
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 140
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:21:29] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003670 train acc = 1.0000, test acc = 0.0855
+Evaluate 1 random ConvNet, mean = 0.0855 std = 0.0000
+-------------------------
+[2022-12-08 22:21:49] iter = 0140, loss = 212.2618
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 150
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:25:08] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003669 train acc = 1.0000, test acc = 0.0765
+Evaluate 1 random ConvNet, mean = 0.0765 std = 0.0000
+-------------------------
+[2022-12-08 22:25:28] iter = 0150, loss = 206.0135
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 160
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:28:47] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003756 train acc = 1.0000, test acc = 0.0865
+Evaluate 1 random ConvNet, mean = 0.0865 std = 0.0000
+-------------------------
+[2022-12-08 22:29:07] iter = 0160, loss = 208.3314
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 170
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:32:26] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003793 train acc = 1.0000, test acc = 0.0890
+Evaluate 1 random ConvNet, mean = 0.0890 std = 0.0000
+-------------------------
+[2022-12-08 22:32:46] iter = 0170, loss = 209.9202
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 180
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:36:06] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003637 train acc = 1.0000, test acc = 0.0900
+Evaluate 1 random ConvNet, mean = 0.0900 std = 0.0000
+-------------------------
+[2022-12-08 22:36:25] iter = 0180, loss = 206.8111
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 190
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:39:45] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003715 train acc = 1.0000, test acc = 0.0790
+Evaluate 1 random ConvNet, mean = 0.0790 std = 0.0000
+-------------------------
+[2022-12-08 22:40:04] iter = 0190, loss = 209.8629
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 200
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:43:24] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003701 train acc = 1.0000, test acc = 0.0840
+Evaluate 1 random ConvNet, mean = 0.0840 std = 0.0000
+-------------------------
+[2022-12-08 22:43:43] iter = 0200, loss = 208.3753
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 210
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:47:03] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003689 train acc = 1.0000, test acc = 0.0800
+Evaluate 1 random ConvNet, mean = 0.0800 std = 0.0000
+-------------------------
+[2022-12-08 22:47:22] iter = 0210, loss = 211.7430
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 220
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:50:41] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003668 train acc = 1.0000, test acc = 0.0830
+Evaluate 1 random ConvNet, mean = 0.0830 std = 0.0000
+-------------------------
+[2022-12-08 22:51:01] iter = 0220, loss = 208.5879
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 230
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:54:20] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003782 train acc = 1.0000, test acc = 0.0835
+Evaluate 1 random ConvNet, mean = 0.0835 std = 0.0000
+-------------------------
+[2022-12-08 22:54:40] iter = 0230, loss = 208.0158
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 240
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 22:58:00] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003706 train acc = 1.0000, test acc = 0.0835
+Evaluate 1 random ConvNet, mean = 0.0835 std = 0.0000
+-------------------------
+[2022-12-08 22:58:19] iter = 0240, loss = 211.7742
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 250
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:01:39] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003736 train acc = 1.0000, test acc = 0.0855
+Evaluate 1 random ConvNet, mean = 0.0855 std = 0.0000
+-------------------------
+[2022-12-08 23:01:59] iter = 0250, loss = 209.0996
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 260
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:05:19] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003716 train acc = 1.0000, test acc = 0.0830
+Evaluate 1 random ConvNet, mean = 0.0830 std = 0.0000
+-------------------------
+[2022-12-08 23:05:38] iter = 0260, loss = 212.4311
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 270
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:08:58] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003713 train acc = 1.0000, test acc = 0.0865
+Evaluate 1 random ConvNet, mean = 0.0865 std = 0.0000
+-------------------------
+[2022-12-08 23:09:17] iter = 0270, loss = 208.9685
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 280
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:12:37] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003722 train acc = 1.0000, test acc = 0.0910
+Evaluate 1 random ConvNet, mean = 0.0910 std = 0.0000
+-------------------------
+[2022-12-08 23:12:57] iter = 0280, loss = 206.0118
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 290
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:16:17] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003732 train acc = 1.0000, test acc = 0.0850
+Evaluate 1 random ConvNet, mean = 0.0850 std = 0.0000
+-------------------------
+[2022-12-08 23:16:36] iter = 0290, loss = 210.3012
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 300
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:19:56] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003701 train acc = 1.0000, test acc = 0.0850
+Evaluate 1 random ConvNet, mean = 0.0850 std = 0.0000
+-------------------------
+[2022-12-08 23:20:15] iter = 0300, loss = 211.0615
+
+==================== Final Results ====================
+
+Run 1 experiments, train on ConvNet, evaluate 1 random ConvNet, mean  = 8.50%  std = 0.00%
+Files already downloaded and verified
+Files already downloaded and verified
+
+================== Exp 0 ==================
+ 
+Hyper-parameters: 
+ {'method': 'DSA', 'dataset': 'CIFAR100_herding', 'model': 'ConvNet', 'ipc': 10, 'eval_mode': 'S', 'num_exp': 1, 'num_eval': 1, 'epoch_eval_train': 1000, 'Iteration': 300, 'lr_img': 0.1, 'lr_net': 0.01, 'batch_real': 256, 'batch_train': 256, 'init': 'herding', 'dsa_strategy': 'None', 'data_path': '../data', 'save_path': 'result', 'dis_metric': 'ours', 'epsilon': 0.1, 'alpha': 0.05, 'outer_loop': 10, 'inner_loop': 50, 'device': 'cuda', 'dsa_param': <utils.ParamDiffAug object at 0x7f0e9b8e5b40>, 'dsa': True, 'dc_aug_param': None}
+Evaluation model pool:  ['ConvNet']
+class c = 0: 500 real images
+class c = 1: 500 real images
+class c = 2: 500 real images
+class c = 3: 500 real images
+class c = 4: 500 real images
+class c = 5: 500 real images
+class c = 6: 500 real images
+class c = 7: 500 real images
+class c = 8: 500 real images
+class c = 9: 500 real images
+class c = 10: 500 real images
+class c = 11: 500 real images
+class c = 12: 500 real images
+class c = 13: 500 real images
+class c = 14: 500 real images
+class c = 15: 500 real images
+class c = 16: 500 real images
+class c = 17: 500 real images
+class c = 18: 500 real images
+class c = 19: 500 real images
+real images channel 0, mean = -0.0405, std = 0.9930
+real images channel 1, mean = -0.0608, std = 0.9956
+real images channel 2, mean = -0.0525, std = 0.9791
+initialize synthetic data from selected images
+[2022-12-08 23:20:21] training begins
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 0
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:20:46] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003683 train acc = 1.0000, test acc = 0.0425
+Evaluate 1 random ConvNet, mean = 0.0425 std = 0.0000
+-------------------------
+[2022-12-08 23:21:06] iter = 0000, loss = 225.4265
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 10
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:24:25] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003702 train acc = 1.0000, test acc = 0.0720
+Evaluate 1 random ConvNet, mean = 0.0720 std = 0.0000
+-------------------------
+[2022-12-08 23:24:45] iter = 0010, loss = 210.7198
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 20
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:28:05] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003635 train acc = 1.0000, test acc = 0.0630
+Evaluate 1 random ConvNet, mean = 0.0630 std = 0.0000
+-------------------------
+[2022-12-08 23:28:24] iter = 0020, loss = 211.8850
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 30
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:31:44] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003670 train acc = 1.0000, test acc = 0.0685
+Evaluate 1 random ConvNet, mean = 0.0685 std = 0.0000
+-------------------------
+[2022-12-08 23:32:04] iter = 0030, loss = 208.7150
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 40
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:35:23] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003659 train acc = 1.0000, test acc = 0.0705
+Evaluate 1 random ConvNet, mean = 0.0705 std = 0.0000
+-------------------------
+[2022-12-08 23:35:43] iter = 0040, loss = 215.6786
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 50
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:39:03] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003627 train acc = 1.0000, test acc = 0.0695
+Evaluate 1 random ConvNet, mean = 0.0695 std = 0.0000
+-------------------------
+[2022-12-08 23:39:22] iter = 0050, loss = 215.3606
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 60
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:42:42] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003647 train acc = 1.0000, test acc = 0.0695
+Evaluate 1 random ConvNet, mean = 0.0695 std = 0.0000
+-------------------------
+[2022-12-08 23:43:01] iter = 0060, loss = 207.0639
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 70
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:46:21] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003609 train acc = 1.0000, test acc = 0.0725
+Evaluate 1 random ConvNet, mean = 0.0725 std = 0.0000
+-------------------------
+[2022-12-08 23:46:41] iter = 0070, loss = 209.6781
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 80
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:50:00] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003654 train acc = 1.0000, test acc = 0.0675
+Evaluate 1 random ConvNet, mean = 0.0675 std = 0.0000
+-------------------------
+[2022-12-08 23:50:20] iter = 0080, loss = 214.8175
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 90
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:53:38] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003674 train acc = 1.0000, test acc = 0.0695
+Evaluate 1 random ConvNet, mean = 0.0695 std = 0.0000
+-------------------------
+[2022-12-08 23:53:58] iter = 0090, loss = 212.2456
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 100
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-08 23:57:16] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003711 train acc = 1.0000, test acc = 0.0630
+Evaluate 1 random ConvNet, mean = 0.0630 std = 0.0000
+-------------------------
+[2022-12-08 23:57:35] iter = 0100, loss = 209.4286
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 110
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:00:54] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003630 train acc = 1.0000, test acc = 0.0690
+Evaluate 1 random ConvNet, mean = 0.0690 std = 0.0000
+-------------------------
+[2022-12-09 00:01:13] iter = 0110, loss = 210.4644
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 120
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:04:31] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003653 train acc = 1.0000, test acc = 0.0675
+Evaluate 1 random ConvNet, mean = 0.0675 std = 0.0000
+-------------------------
+[2022-12-09 00:04:51] iter = 0120, loss = 210.0112
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 130
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:08:09] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003708 train acc = 1.0000, test acc = 0.0770
+Evaluate 1 random ConvNet, mean = 0.0770 std = 0.0000
+-------------------------
+[2022-12-09 00:08:29] iter = 0130, loss = 219.7795
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 140
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:11:47] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003657 train acc = 1.0000, test acc = 0.0690
+Evaluate 1 random ConvNet, mean = 0.0690 std = 0.0000
+-------------------------
+[2022-12-09 00:12:07] iter = 0140, loss = 219.5177
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 150
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:15:25] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003711 train acc = 1.0000, test acc = 0.0590
+Evaluate 1 random ConvNet, mean = 0.0590 std = 0.0000
+-------------------------
+[2022-12-09 00:15:44] iter = 0150, loss = 211.9480
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 160
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:19:03] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003590 train acc = 1.0000, test acc = 0.0715
+Evaluate 1 random ConvNet, mean = 0.0715 std = 0.0000
+-------------------------
+[2022-12-09 00:19:23] iter = 0160, loss = 214.8235
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 170
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:22:40] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003719 train acc = 1.0000, test acc = 0.0680
+Evaluate 1 random ConvNet, mean = 0.0680 std = 0.0000
+-------------------------
+[2022-12-09 00:23:00] iter = 0170, loss = 211.6161
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 180
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:26:18] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003627 train acc = 1.0000, test acc = 0.0705
+Evaluate 1 random ConvNet, mean = 0.0705 std = 0.0000
+-------------------------
+[2022-12-09 00:26:37] iter = 0180, loss = 210.0947
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 190
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:29:56] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003762 train acc = 1.0000, test acc = 0.0685
+Evaluate 1 random ConvNet, mean = 0.0685 std = 0.0000
+-------------------------
+[2022-12-09 00:30:15] iter = 0190, loss = 212.2916
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 200
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:33:34] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003654 train acc = 1.0000, test acc = 0.0700
+Evaluate 1 random ConvNet, mean = 0.0700 std = 0.0000
+-------------------------
+[2022-12-09 00:33:53] iter = 0200, loss = 213.1653
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 210
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:37:12] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003678 train acc = 1.0000, test acc = 0.0720
+Evaluate 1 random ConvNet, mean = 0.0720 std = 0.0000
+-------------------------
+[2022-12-09 00:37:31] iter = 0210, loss = 210.4494
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 220
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:40:50] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003693 train acc = 1.0000, test acc = 0.0700
+Evaluate 1 random ConvNet, mean = 0.0700 std = 0.0000
+-------------------------
+[2022-12-09 00:41:10] iter = 0220, loss = 215.6161
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 230
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:44:29] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003738 train acc = 1.0000, test acc = 0.0810
+Evaluate 1 random ConvNet, mean = 0.0810 std = 0.0000
+-------------------------
+[2022-12-09 00:44:48] iter = 0230, loss = 212.2004
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 240
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:48:07] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003743 train acc = 1.0000, test acc = 0.0670
+Evaluate 1 random ConvNet, mean = 0.0670 std = 0.0000
+-------------------------
+[2022-12-09 00:48:26] iter = 0240, loss = 208.6237
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 250
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:51:44] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003595 train acc = 1.0000, test acc = 0.0665
+Evaluate 1 random ConvNet, mean = 0.0665 std = 0.0000
+-------------------------
+[2022-12-09 00:52:04] iter = 0250, loss = 214.5460
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 260
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:55:22] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003647 train acc = 1.0000, test acc = 0.0720
+Evaluate 1 random ConvNet, mean = 0.0720 std = 0.0000
+-------------------------
+[2022-12-09 00:55:41] iter = 0260, loss = 211.3037
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 270
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 00:58:59] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003634 train acc = 1.0000, test acc = 0.0705
+Evaluate 1 random ConvNet, mean = 0.0705 std = 0.0000
+-------------------------
+[2022-12-09 00:59:19] iter = 0270, loss = 209.9552
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 280
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 01:02:38] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003638 train acc = 1.0000, test acc = 0.0685
+Evaluate 1 random ConvNet, mean = 0.0685 std = 0.0000
+-------------------------
+[2022-12-09 01:02:57] iter = 0280, loss = 209.8613
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 290
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 01:06:17] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003644 train acc = 1.0000, test acc = 0.0700
+Evaluate 1 random ConvNet, mean = 0.0700 std = 0.0000
+-------------------------
+[2022-12-09 01:06:36] iter = 0290, loss = 212.2158
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 300
+DSA augmentation strategy: 
+ None
+DSA augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+[2022-12-09 01:09:55] Evaluate_00: epoch = 1000 train time = 24 s train loss = 0.003707 train acc = 1.0000, test acc = 0.0685
+Evaluate 1 random ConvNet, mean = 0.0685 std = 0.0000
+-------------------------
+[2022-12-09 01:10:15] iter = 0300, loss = 214.3824
+
+==================== Final Results ====================
+
+Run 1 experiments, train on ConvNet, evaluate 1 random ConvNet, mean  = 6.85%  std = 0.00%

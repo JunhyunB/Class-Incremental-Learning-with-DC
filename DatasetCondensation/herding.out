@@ -1,0 +1,308 @@
+nohup: ignoring input
+Files already downloaded and verified
+Files already downloaded and verified
+
+==================================================================================
+method:  herding
+=========================================
+seed:  0
+class_order:  [26, 86, 2, 55, 75, 93, 16, 73, 54, 95, 53, 92, 78, 13, 7, 30, 22, 24, 33, 8, 43, 62, 3, 71, 45, 48, 6, 99, 82, 76, 60, 80, 90, 68, 51, 27, 18, 56, 63, 74, 1, 61, 42, 41, 4, 15, 17, 40, 38, 5, 91, 59, 0, 34, 28, 50, 11, 35, 23, 52, 10, 31, 66, 57, 79, 85, 32, 84, 14, 89, 19, 29, 49, 97, 98, 69, 20, 94, 72, 77, 25, 37, 81, 46, 39, 65, 58, 12, 88, 70, 87, 36, 21, 83, 9, 96, 67, 64, 47, 44]
+augmentation strategy: 
+ color_crop_cutout_flip_scale_rotate
+augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5}
+use data:  ./../data/metasets/cl_data/cl_herding_CIFAR100_ConvNet_20ipc_5steps_seed0.pt
+
+-----------------------------
+method herding seed 0 step 0 
+classes_seen:  [26, 86, 2, 55, 75, 93, 16, 73, 54, 95, 53, 92, 78, 13, 7, 30, 22, 24, 33, 8]
+train data size:  torch.Size([400, 3, 32, 32])
+test set size:  torch.Size([2000, 3, 32, 32])
+/opt/conda/envs/idl/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /opt/conda/conda-bld/pytorch_1666642969563/work/aten/src/ATen/native/TensorShape.cpp:3190.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/opt/conda/envs/idl/lib/python3.10/site-packages/torch/nn/functional.py:4289: UserWarning: Default grid_sample and affine_grid behavior has changed to align_corners=False since 1.3.0. Please specify align_corners=True if the old behavior is desired. See the documentation of grid_sample for details.
+  warnings.warn(
+/opt/conda/envs/idl/lib/python3.10/site-packages/torch/nn/functional.py:4227: UserWarning: Default grid_sample and affine_grid behavior has changed to align_corners=False since 1.3.0. Please specify align_corners=True if the old behavior is desired. See the documentation of grid_sample for details.
+  warnings.warn(
+[2022-11-29 15:47:16] Evaluate_00: epoch = 1000 train time = 110 s train loss = 0.004619 train acc = 1.0000, test acc = 0.4595
+[2022-11-29 15:49:09] Evaluate_01: epoch = 1000 train time = 112 s train loss = 0.005225 train acc = 1.0000, test acc = 0.4490
+[2022-11-29 15:50:59] Evaluate_02: epoch = 1000 train time = 109 s train loss = 0.025291 train acc = 1.0000, test acc = 0.4545
+Evaluate 3 random ConvNet, mean = 0.4543 std = 0.0043
+
+-----------------------------
+method herding seed 0 step 1 
+classes_seen:  [26, 86, 2, 55, 75, 93, 16, 73, 54, 95, 53, 92, 78, 13, 7, 30, 22, 24, 33, 8, 43, 62, 3, 71, 45, 48, 6, 99, 82, 76, 60, 80, 90, 68, 51, 27, 18, 56, 63, 74]
+train data size:  torch.Size([800, 3, 32, 32])
+test set size:  torch.Size([4000, 3, 32, 32])
+[2022-11-29 15:54:55] Evaluate_00: epoch = 1000 train time = 231 s train loss = 0.001799 train acc = 1.0000, test acc = 0.3925
+[2022-11-29 15:58:46] Evaluate_01: epoch = 1000 train time = 230 s train loss = 0.019770 train acc = 1.0000, test acc = 0.3922
+[2022-11-29 16:02:36] Evaluate_02: epoch = 1000 train time = 229 s train loss = 0.006479 train acc = 1.0000, test acc = 0.3930
+Evaluate 3 random ConvNet, mean = 0.3926 std = 0.0003
+
+-----------------------------
+method herding seed 0 step 2 
+classes_seen:  [26, 86, 2, 55, 75, 93, 16, 73, 54, 95, 53, 92, 78, 13, 7, 30, 22, 24, 33, 8, 43, 62, 3, 71, 45, 48, 6, 99, 82, 76, 60, 80, 90, 68, 51, 27, 18, 56, 63, 74, 1, 61, 42, 41, 4, 15, 17, 40, 38, 5, 91, 59, 0, 34, 28, 50, 11, 35, 23, 52]
+train data size:  torch.Size([1200, 3, 32, 32])
+test set size:  torch.Size([6000, 3, 32, 32])
+[2022-11-29 16:08:08] Evaluate_00: epoch = 1000 train time = 326 s train loss = 0.014393 train acc = 1.0000, test acc = 0.3605
+[2022-11-29 16:13:33] Evaluate_01: epoch = 1000 train time = 324 s train loss = 0.005517 train acc = 0.9992, test acc = 0.3523
+[2022-11-29 16:19:16] Evaluate_02: epoch = 1000 train time = 342 s train loss = 0.015252 train acc = 0.9992, test acc = 0.3555
+Evaluate 3 random ConvNet, mean = 0.3561 std = 0.0034
+
+-----------------------------
+method herding seed 0 step 3 
+classes_seen:  [26, 86, 2, 55, 75, 93, 16, 73, 54, 95, 53, 92, 78, 13, 7, 30, 22, 24, 33, 8, 43, 62, 3, 71, 45, 48, 6, 99, 82, 76, 60, 80, 90, 68, 51, 27, 18, 56, 63, 74, 1, 61, 42, 41, 4, 15, 17, 40, 38, 5, 91, 59, 0, 34, 28, 50, 11, 35, 23, 52, 10, 31, 66, 57, 79, 85, 32, 84, 14, 89, 19, 29, 49, 97, 98, 69, 20, 94, 72, 77]
+train data size:  torch.Size([1600, 3, 32, 32])
+test set size:  torch.Size([8000, 3, 32, 32])
+[2022-11-29 16:26:40] Evaluate_00: epoch = 1000 train time = 437 s train loss = 0.021851 train acc = 1.0000, test acc = 0.3132
+[2022-11-29 16:34:06] Evaluate_01: epoch = 1000 train time = 445 s train loss = 0.029971 train acc = 0.9994, test acc = 0.3159
+[2022-11-29 16:41:29] Evaluate_02: epoch = 1000 train time = 441 s train loss = 0.025075 train acc = 0.9975, test acc = 0.3116
+Evaluate 3 random ConvNet, mean = 0.3136 std = 0.0018
+
+-----------------------------
+method herding seed 0 step 4 
+classes_seen:  [26, 86, 2, 55, 75, 93, 16, 73, 54, 95, 53, 92, 78, 13, 7, 30, 22, 24, 33, 8, 43, 62, 3, 71, 45, 48, 6, 99, 82, 76, 60, 80, 90, 68, 51, 27, 18, 56, 63, 74, 1, 61, 42, 41, 4, 15, 17, 40, 38, 5, 91, 59, 0, 34, 28, 50, 11, 35, 23, 52, 10, 31, 66, 57, 79, 85, 32, 84, 14, 89, 19, 29, 49, 97, 98, 69, 20, 94, 72, 77, 25, 37, 81, 46, 39, 65, 58, 12, 88, 70, 87, 36, 21, 83, 9, 96, 67, 64, 47, 44]
+train data size:  torch.Size([2000, 3, 32, 32])
+test set size:  torch.Size([10000, 3, 32, 32])
+[2022-11-29 16:51:01] Evaluate_00: epoch = 1000 train time = 564 s train loss = 0.037029 train acc = 0.9975, test acc = 0.2790
+[2022-11-29 17:00:24] Evaluate_01: epoch = 1000 train time = 561 s train loss = 0.025555 train acc = 0.9985, test acc = 0.2773
+[2022-11-29 17:09:22] Evaluate_02: epoch = 1000 train time = 537 s train loss = 0.016102 train acc = 0.9985, test acc = 0.2741
+Evaluate 3 random ConvNet, mean = 0.2768 std = 0.0020
+=========================================
+seed:  1
+class_order:  [80, 84, 33, 81, 93, 17, 36, 82, 69, 65, 92, 39, 56, 52, 51, 32, 31, 44, 78, 10, 2, 73, 97, 62, 19, 35, 94, 27, 46, 38, 67, 99, 54, 95, 88, 40, 48, 59, 23, 34, 86, 53, 77, 15, 83, 41, 45, 91, 26, 98, 43, 55, 24, 4, 58, 49, 21, 87, 3, 74, 30, 66, 70, 42, 47, 89, 8, 60, 0, 90, 57, 22, 61, 63, 7, 96, 13, 68, 85, 14, 29, 28, 11, 18, 20, 50, 25, 6, 71, 76, 1, 16, 64, 79, 5, 75, 9, 72, 12, 37]
+augmentation strategy: 
+ color_crop_cutout_flip_scale_rotate
+augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5, 'Siamese': False, 'latestseed': -1}
+use data:  ./../data/metasets/cl_data/cl_herding_CIFAR100_ConvNet_20ipc_5steps_seed1.pt
+
+-----------------------------
+method herding seed 1 step 0 
+classes_seen:  [80, 84, 33, 81, 93, 17, 36, 82, 69, 65, 92, 39, 56, 52, 51, 32, 31, 44, 78, 10]
+train data size:  torch.Size([400, 3, 32, 32])
+test set size:  torch.Size([2000, 3, 32, 32])
+[2022-11-29 17:11:11] Evaluate_00: epoch = 1000 train time = 105 s train loss = 0.008128 train acc = 1.0000, test acc = 0.4785
+[2022-11-29 17:12:57] Evaluate_01: epoch = 1000 train time = 105 s train loss = 0.011008 train acc = 1.0000, test acc = 0.4795
+[2022-11-29 17:14:37] Evaluate_02: epoch = 1000 train time = 99 s train loss = 0.001144 train acc = 1.0000, test acc = 0.4695
+Evaluate 3 random ConvNet, mean = 0.4758 std = 0.0045
+
+-----------------------------
+method herding seed 1 step 1 
+classes_seen:  [80, 84, 33, 81, 93, 17, 36, 82, 69, 65, 92, 39, 56, 52, 51, 32, 31, 44, 78, 10, 2, 73, 97, 62, 19, 35, 94, 27, 46, 38, 67, 99, 54, 95, 88, 40, 48, 59, 23, 34]
+train data size:  torch.Size([800, 3, 32, 32])
+test set size:  torch.Size([4000, 3, 32, 32])
+[2022-11-29 17:18:18] Evaluate_00: epoch = 1000 train time = 216 s train loss = 0.028441 train acc = 0.9988, test acc = 0.3530
+[2022-11-29 17:21:51] Evaluate_01: epoch = 1000 train time = 212 s train loss = 0.015643 train acc = 1.0000, test acc = 0.3755
+[2022-11-29 17:25:31] Evaluate_02: epoch = 1000 train time = 219 s train loss = 0.014254 train acc = 1.0000, test acc = 0.3690
+Evaluate 3 random ConvNet, mean = 0.3658 std = 0.0095
+
+-----------------------------
+method herding seed 1 step 2 
+classes_seen:  [80, 84, 33, 81, 93, 17, 36, 82, 69, 65, 92, 39, 56, 52, 51, 32, 31, 44, 78, 10, 2, 73, 97, 62, 19, 35, 94, 27, 46, 38, 67, 99, 54, 95, 88, 40, 48, 59, 23, 34, 86, 53, 77, 15, 83, 41, 45, 91, 26, 98, 43, 55, 24, 4, 58, 49, 21, 87, 3, 74]
+train data size:  torch.Size([1200, 3, 32, 32])
+test set size:  torch.Size([6000, 3, 32, 32])
+[2022-11-29 17:31:20] Evaluate_00: epoch = 1000 train time = 344 s train loss = 0.017915 train acc = 1.0000, test acc = 0.3263
+[2022-11-29 17:36:38] Evaluate_01: epoch = 1000 train time = 316 s train loss = 0.010248 train acc = 1.0000, test acc = 0.3172
+[2022-11-29 17:42:17] Evaluate_02: epoch = 1000 train time = 337 s train loss = 0.003875 train acc = 1.0000, test acc = 0.3155
+Evaluate 3 random ConvNet, mean = 0.3197 std = 0.0048
+
+-----------------------------
+method herding seed 1 step 3 
+classes_seen:  [80, 84, 33, 81, 93, 17, 36, 82, 69, 65, 92, 39, 56, 52, 51, 32, 31, 44, 78, 10, 2, 73, 97, 62, 19, 35, 94, 27, 46, 38, 67, 99, 54, 95, 88, 40, 48, 59, 23, 34, 86, 53, 77, 15, 83, 41, 45, 91, 26, 98, 43, 55, 24, 4, 58, 49, 21, 87, 3, 74, 30, 66, 70, 42, 47, 89, 8, 60, 0, 90, 57, 22, 61, 63, 7, 96, 13, 68, 85, 14]
+train data size:  torch.Size([1600, 3, 32, 32])
+test set size:  torch.Size([8000, 3, 32, 32])
+[2022-11-29 17:50:02] Evaluate_00: epoch = 1000 train time = 457 s train loss = 0.018446 train acc = 1.0000, test acc = 0.3068
+[2022-11-29 17:57:41] Evaluate_01: epoch = 1000 train time = 457 s train loss = 0.014620 train acc = 0.9994, test acc = 0.3011
+[2022-11-29 18:04:51] Evaluate_02: epoch = 1000 train time = 429 s train loss = 0.008894 train acc = 1.0000, test acc = 0.3014
+Evaluate 3 random ConvNet, mean = 0.3031 std = 0.0026
+
+-----------------------------
+method herding seed 1 step 4 
+classes_seen:  [80, 84, 33, 81, 93, 17, 36, 82, 69, 65, 92, 39, 56, 52, 51, 32, 31, 44, 78, 10, 2, 73, 97, 62, 19, 35, 94, 27, 46, 38, 67, 99, 54, 95, 88, 40, 48, 59, 23, 34, 86, 53, 77, 15, 83, 41, 45, 91, 26, 98, 43, 55, 24, 4, 58, 49, 21, 87, 3, 74, 30, 66, 70, 42, 47, 89, 8, 60, 0, 90, 57, 22, 61, 63, 7, 96, 13, 68, 85, 14, 29, 28, 11, 18, 20, 50, 25, 6, 71, 76, 1, 16, 64, 79, 5, 75, 9, 72, 12, 37]
+train data size:  torch.Size([2000, 3, 32, 32])
+test set size:  torch.Size([10000, 3, 32, 32])
+[2022-11-29 18:14:25] Evaluate_00: epoch = 1000 train time = 565 s train loss = 0.011999 train acc = 0.9985, test acc = 0.2824
+[2022-11-29 18:23:49] Evaluate_01: epoch = 1000 train time = 562 s train loss = 0.015357 train acc = 0.9985, test acc = 0.2805
+[2022-11-29 18:33:07] Evaluate_02: epoch = 1000 train time = 556 s train loss = 0.018216 train acc = 0.9985, test acc = 0.2823
+Evaluate 3 random ConvNet, mean = 0.2817 std = 0.0009
+=========================================
+seed:  2
+class_order:  [83, 30, 56, 24, 16, 23, 2, 27, 28, 13, 99, 92, 76, 14, 0, 21, 3, 29, 61, 79, 35, 11, 84, 44, 73, 5, 25, 77, 74, 62, 65, 1, 18, 48, 36, 78, 6, 89, 91, 10, 12, 53, 87, 54, 95, 32, 19, 26, 60, 55, 9, 96, 17, 59, 57, 41, 64, 45, 97, 8, 71, 94, 90, 98, 86, 80, 50, 52, 66, 88, 70, 46, 68, 69, 81, 58, 33, 38, 51, 42, 4, 67, 39, 37, 20, 31, 63, 47, 85, 93, 49, 34, 7, 75, 82, 43, 22, 72, 15, 40]
+augmentation strategy: 
+ color_crop_cutout_flip_scale_rotate
+augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5, 'Siamese': False, 'latestseed': -1}
+use data:  ./../data/metasets/cl_data/cl_herding_CIFAR100_ConvNet_20ipc_5steps_seed2.pt
+
+-----------------------------
+method herding seed 2 step 0 
+classes_seen:  [83, 30, 56, 24, 16, 23, 2, 27, 28, 13, 99, 92, 76, 14, 0, 21, 3, 29, 61, 79]
+train data size:  torch.Size([400, 3, 32, 32])
+test set size:  torch.Size([2000, 3, 32, 32])
+[2022-11-29 18:34:55] Evaluate_00: epoch = 1000 train time = 105 s train loss = 0.012428 train acc = 1.0000, test acc = 0.5270
+[2022-11-29 18:36:41] Evaluate_01: epoch = 1000 train time = 106 s train loss = 0.012503 train acc = 1.0000, test acc = 0.5170
+[2022-11-29 18:38:25] Evaluate_02: epoch = 1000 train time = 102 s train loss = 0.009848 train acc = 1.0000, test acc = 0.5230
+Evaluate 3 random ConvNet, mean = 0.5223 std = 0.0041
+
+-----------------------------
+method herding seed 2 step 1 
+classes_seen:  [83, 30, 56, 24, 16, 23, 2, 27, 28, 13, 99, 92, 76, 14, 0, 21, 3, 29, 61, 79, 35, 11, 84, 44, 73, 5, 25, 77, 74, 62, 65, 1, 18, 48, 36, 78, 6, 89, 91, 10]
+train data size:  torch.Size([800, 3, 32, 32])
+test set size:  torch.Size([4000, 3, 32, 32])
+[2022-11-29 18:42:18] Evaluate_00: epoch = 1000 train time = 229 s train loss = 0.019750 train acc = 0.9975, test acc = 0.3620
+[2022-11-29 18:46:10] Evaluate_01: epoch = 1000 train time = 231 s train loss = 0.021089 train acc = 0.9988, test acc = 0.3533
+[2022-11-29 18:50:00] Evaluate_02: epoch = 1000 train time = 229 s train loss = 0.034705 train acc = 0.9975, test acc = 0.3598
+Evaluate 3 random ConvNet, mean = 0.3583 std = 0.0037
+
+-----------------------------
+method herding seed 2 step 2 
+classes_seen:  [83, 30, 56, 24, 16, 23, 2, 27, 28, 13, 99, 92, 76, 14, 0, 21, 3, 29, 61, 79, 35, 11, 84, 44, 73, 5, 25, 77, 74, 62, 65, 1, 18, 48, 36, 78, 6, 89, 91, 10, 12, 53, 87, 54, 95, 32, 19, 26, 60, 55, 9, 96, 17, 59, 57, 41, 64, 45, 97, 8]
+train data size:  torch.Size([1200, 3, 32, 32])
+test set size:  torch.Size([6000, 3, 32, 32])
+[2022-11-29 18:55:48] Evaluate_00: epoch = 1000 train time = 341 s train loss = 0.018781 train acc = 1.0000, test acc = 0.3340
+[2022-11-29 19:01:25] Evaluate_01: epoch = 1000 train time = 335 s train loss = 0.010905 train acc = 0.9992, test acc = 0.3302
+[2022-11-29 19:07:08] Evaluate_02: epoch = 1000 train time = 342 s train loss = 0.016063 train acc = 0.9983, test acc = 0.3378
+Evaluate 3 random ConvNet, mean = 0.3340 std = 0.0031
+
+-----------------------------
+method herding seed 2 step 3 
+classes_seen:  [83, 30, 56, 24, 16, 23, 2, 27, 28, 13, 99, 92, 76, 14, 0, 21, 3, 29, 61, 79, 35, 11, 84, 44, 73, 5, 25, 77, 74, 62, 65, 1, 18, 48, 36, 78, 6, 89, 91, 10, 12, 53, 87, 54, 95, 32, 19, 26, 60, 55, 9, 96, 17, 59, 57, 41, 64, 45, 97, 8, 71, 94, 90, 98, 86, 80, 50, 52, 66, 88, 70, 46, 68, 69, 81, 58, 33, 38, 51, 42]
+train data size:  torch.Size([1600, 3, 32, 32])
+test set size:  torch.Size([8000, 3, 32, 32])
+[2022-11-29 19:14:52] Evaluate_00: epoch = 1000 train time = 456 s train loss = 0.024742 train acc = 0.9994, test acc = 0.3086
+[2022-11-29 19:22:14] Evaluate_01: epoch = 1000 train time = 441 s train loss = 0.022228 train acc = 1.0000, test acc = 0.3028
+[2022-11-29 19:29:44] Evaluate_02: epoch = 1000 train time = 448 s train loss = 0.020619 train acc = 0.9969, test acc = 0.2974
+Evaluate 3 random ConvNet, mean = 0.3029 std = 0.0046
+
+-----------------------------
+method herding seed 2 step 4 
+classes_seen:  [83, 30, 56, 24, 16, 23, 2, 27, 28, 13, 99, 92, 76, 14, 0, 21, 3, 29, 61, 79, 35, 11, 84, 44, 73, 5, 25, 77, 74, 62, 65, 1, 18, 48, 36, 78, 6, 89, 91, 10, 12, 53, 87, 54, 95, 32, 19, 26, 60, 55, 9, 96, 17, 59, 57, 41, 64, 45, 97, 8, 71, 94, 90, 98, 86, 80, 50, 52, 66, 88, 70, 46, 68, 69, 81, 58, 33, 38, 51, 42, 4, 67, 39, 37, 20, 31, 63, 47, 85, 93, 49, 34, 7, 75, 82, 43, 22, 72, 15, 40]
+train data size:  torch.Size([2000, 3, 32, 32])
+test set size:  torch.Size([10000, 3, 32, 32])
+[2022-11-29 19:38:52] Evaluate_00: epoch = 1000 train time = 538 s train loss = 0.017964 train acc = 0.9990, test acc = 0.2840
+[2022-11-29 19:48:16] Evaluate_01: epoch = 1000 train time = 562 s train loss = 0.024060 train acc = 0.9995, test acc = 0.2820
+[2022-11-29 19:57:23] Evaluate_02: epoch = 1000 train time = 545 s train loss = 0.022176 train acc = 0.9990, test acc = 0.2797
+Evaluate 3 random ConvNet, mean = 0.2819 std = 0.0018
+=========================================
+seed:  3
+class_order:  [93, 67, 6, 64, 96, 83, 98, 42, 25, 15, 77, 9, 71, 97, 34, 75, 82, 23, 59, 45, 73, 12, 8, 4, 79, 86, 17, 65, 47, 50, 30, 5, 13, 31, 88, 11, 58, 85, 32, 40, 16, 27, 35, 36, 92, 90, 78, 76, 68, 46, 53, 70, 80, 61, 18, 91, 57, 95, 54, 55, 28, 52, 84, 89, 49, 87, 37, 48, 33, 43, 7, 62, 99, 29, 69, 51, 1, 60, 63, 2, 66, 22, 81, 26, 14, 39, 44, 20, 38, 94, 10, 41, 74, 19, 21, 0, 72, 56, 3, 24]
+augmentation strategy: 
+ color_crop_cutout_flip_scale_rotate
+augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5, 'Siamese': False, 'latestseed': -1}
+use data:  ./../data/metasets/cl_data/cl_herding_CIFAR100_ConvNet_20ipc_5steps_seed3.pt
+
+-----------------------------
+method herding seed 3 step 0 
+classes_seen:  [93, 67, 6, 64, 96, 83, 98, 42, 25, 15, 77, 9, 71, 97, 34, 75, 82, 23, 59, 45]
+train data size:  torch.Size([400, 3, 32, 32])
+test set size:  torch.Size([2000, 3, 32, 32])
+[2022-11-29 19:59:22] Evaluate_00: epoch = 1000 train time = 115 s train loss = 0.000806 train acc = 1.0000, test acc = 0.4560
+[2022-11-29 20:01:17] Evaluate_01: epoch = 1000 train time = 115 s train loss = 0.018541 train acc = 0.9975, test acc = 0.4515
+[2022-11-29 20:03:05] Evaluate_02: epoch = 1000 train time = 107 s train loss = 0.004903 train acc = 1.0000, test acc = 0.4400
+Evaluate 3 random ConvNet, mean = 0.4492 std = 0.0067
+
+-----------------------------
+method herding seed 3 step 1 
+classes_seen:  [93, 67, 6, 64, 96, 83, 98, 42, 25, 15, 77, 9, 71, 97, 34, 75, 82, 23, 59, 45, 73, 12, 8, 4, 79, 86, 17, 65, 47, 50, 30, 5, 13, 31, 88, 11, 58, 85, 32, 40]
+train data size:  torch.Size([800, 3, 32, 32])
+test set size:  torch.Size([4000, 3, 32, 32])
+[2022-11-29 20:06:59] Evaluate_00: epoch = 1000 train time = 229 s train loss = 0.022138 train acc = 0.9988, test acc = 0.3540
+[2022-11-29 20:10:46] Evaluate_01: epoch = 1000 train time = 225 s train loss = 0.007413 train acc = 0.9988, test acc = 0.3518
+[2022-11-29 20:14:21] Evaluate_02: epoch = 1000 train time = 214 s train loss = 0.008232 train acc = 1.0000, test acc = 0.3468
+Evaluate 3 random ConvNet, mean = 0.3508 std = 0.0030
+
+-----------------------------
+method herding seed 3 step 2 
+classes_seen:  [93, 67, 6, 64, 96, 83, 98, 42, 25, 15, 77, 9, 71, 97, 34, 75, 82, 23, 59, 45, 73, 12, 8, 4, 79, 86, 17, 65, 47, 50, 30, 5, 13, 31, 88, 11, 58, 85, 32, 40, 16, 27, 35, 36, 92, 90, 78, 76, 68, 46, 53, 70, 80, 61, 18, 91, 57, 95, 54, 55]
+train data size:  torch.Size([1200, 3, 32, 32])
+test set size:  torch.Size([6000, 3, 32, 32])
+[2022-11-29 20:19:43] Evaluate_00: epoch = 1000 train time = 317 s train loss = 0.013823 train acc = 0.9992, test acc = 0.3158
+[2022-11-29 20:24:55] Evaluate_01: epoch = 1000 train time = 311 s train loss = 0.024919 train acc = 0.9992, test acc = 0.3148
+[2022-11-29 20:30:26] Evaluate_02: epoch = 1000 train time = 330 s train loss = 0.008331 train acc = 1.0000, test acc = 0.3160
+Evaluate 3 random ConvNet, mean = 0.3156 std = 0.0005
+
+-----------------------------
+method herding seed 3 step 3 
+classes_seen:  [93, 67, 6, 64, 96, 83, 98, 42, 25, 15, 77, 9, 71, 97, 34, 75, 82, 23, 59, 45, 73, 12, 8, 4, 79, 86, 17, 65, 47, 50, 30, 5, 13, 31, 88, 11, 58, 85, 32, 40, 16, 27, 35, 36, 92, 90, 78, 76, 68, 46, 53, 70, 80, 61, 18, 91, 57, 95, 54, 55, 28, 52, 84, 89, 49, 87, 37, 48, 33, 43, 7, 62, 99, 29, 69, 51, 1, 60, 63, 2]
+train data size:  torch.Size([1600, 3, 32, 32])
+test set size:  torch.Size([8000, 3, 32, 32])
+[2022-11-29 20:37:58] Evaluate_00: epoch = 1000 train time = 445 s train loss = 0.013545 train acc = 1.0000, test acc = 0.2954
+[2022-11-29 20:45:31] Evaluate_01: epoch = 1000 train time = 451 s train loss = 0.007104 train acc = 0.9994, test acc = 0.2989
+[2022-11-29 20:52:41] Evaluate_02: epoch = 1000 train time = 429 s train loss = 0.028456 train acc = 0.9988, test acc = 0.2904
+Evaluate 3 random ConvNet, mean = 0.2949 std = 0.0035
+
+-----------------------------
+method herding seed 3 step 4 
+classes_seen:  [93, 67, 6, 64, 96, 83, 98, 42, 25, 15, 77, 9, 71, 97, 34, 75, 82, 23, 59, 45, 73, 12, 8, 4, 79, 86, 17, 65, 47, 50, 30, 5, 13, 31, 88, 11, 58, 85, 32, 40, 16, 27, 35, 36, 92, 90, 78, 76, 68, 46, 53, 70, 80, 61, 18, 91, 57, 95, 54, 55, 28, 52, 84, 89, 49, 87, 37, 48, 33, 43, 7, 62, 99, 29, 69, 51, 1, 60, 63, 2, 66, 22, 81, 26, 14, 39, 44, 20, 38, 94, 10, 41, 74, 19, 21, 0, 72, 56, 3, 24]
+train data size:  torch.Size([2000, 3, 32, 32])
+test set size:  torch.Size([10000, 3, 32, 32])
+[2022-11-29 21:02:12] Evaluate_00: epoch = 1000 train time = 561 s train loss = 0.029794 train acc = 0.9980, test acc = 0.2827
+[2022-11-29 21:11:04] Evaluate_01: epoch = 1000 train time = 531 s train loss = 0.008895 train acc = 0.9995, test acc = 0.2747
+[2022-11-29 21:20:15] Evaluate_02: epoch = 1000 train time = 549 s train loss = 0.047771 train acc = 0.9980, test acc = 0.2755
+Evaluate 3 random ConvNet, mean = 0.2776 std = 0.0036
+=========================================
+seed:  4
+class_order:  [20, 10, 96, 16, 63, 24, 53, 97, 41, 47, 43, 2, 95, 26, 13, 37, 14, 29, 35, 54, 80, 4, 81, 76, 85, 60, 5, 70, 71, 19, 65, 62, 27, 75, 61, 78, 18, 88, 7, 39, 6, 77, 11, 59, 22, 94, 23, 12, 92, 25, 83, 48, 17, 68, 31, 34, 15, 51, 86, 82, 28, 64, 67, 33, 45, 42, 40, 32, 91, 74, 49, 8, 30, 99, 66, 56, 84, 73, 79, 21, 89, 0, 3, 52, 38, 44, 93, 36, 57, 90, 98, 58, 9, 50, 72, 87, 1, 69, 55, 46]
+augmentation strategy: 
+ color_crop_cutout_flip_scale_rotate
+augmentation parameters: 
+ {'aug_mode': 'S', 'prob_flip': 0.5, 'ratio_scale': 1.2, 'ratio_rotate': 15.0, 'ratio_crop_pad': 0.125, 'ratio_cutout': 0.5, 'brightness': 1.0, 'saturation': 2.0, 'contrast': 0.5, 'Siamese': False, 'latestseed': -1}
+use data:  ./../data/metasets/cl_data/cl_herding_CIFAR100_ConvNet_20ipc_5steps_seed4.pt
+
+-----------------------------
+method herding seed 4 step 0 
+classes_seen:  [20, 10, 96, 16, 63, 24, 53, 97, 41, 47, 43, 2, 95, 26, 13, 37, 14, 29, 35, 54]
+train data size:  torch.Size([400, 3, 32, 32])
+test set size:  torch.Size([2000, 3, 32, 32])
+[2022-11-29 21:22:15] Evaluate_00: epoch = 1000 train time = 115 s train loss = 0.014710 train acc = 0.9975, test acc = 0.5200
+[2022-11-29 21:24:11] Evaluate_01: epoch = 1000 train time = 116 s train loss = 0.016713 train acc = 1.0000, test acc = 0.5060
+[2022-11-29 21:26:02] Evaluate_02: epoch = 1000 train time = 109 s train loss = 0.001281 train acc = 1.0000, test acc = 0.5285
+Evaluate 3 random ConvNet, mean = 0.5182 std = 0.0093
+
+-----------------------------
+method herding seed 4 step 1 
+classes_seen:  [20, 10, 96, 16, 63, 24, 53, 97, 41, 47, 43, 2, 95, 26, 13, 37, 14, 29, 35, 54, 80, 4, 81, 76, 85, 60, 5, 70, 71, 19, 65, 62, 27, 75, 61, 78, 18, 88, 7, 39]
+train data size:  torch.Size([800, 3, 32, 32])
+test set size:  torch.Size([4000, 3, 32, 32])
+[2022-11-29 21:30:00] Evaluate_00: epoch = 1000 train time = 232 s train loss = 0.038216 train acc = 0.9962, test acc = 0.4047
+[2022-11-29 21:33:51] Evaluate_01: epoch = 1000 train time = 230 s train loss = 0.003828 train acc = 1.0000, test acc = 0.4015
+[2022-11-29 21:37:25] Evaluate_02: epoch = 1000 train time = 213 s train loss = 0.025828 train acc = 0.9988, test acc = 0.3962
+Evaluate 3 random ConvNet, mean = 0.4008 std = 0.0035
+
+-----------------------------
+method herding seed 4 step 2 
+classes_seen:  [20, 10, 96, 16, 63, 24, 53, 97, 41, 47, 43, 2, 95, 26, 13, 37, 14, 29, 35, 54, 80, 4, 81, 76, 85, 60, 5, 70, 71, 19, 65, 62, 27, 75, 61, 78, 18, 88, 7, 39, 6, 77, 11, 59, 22, 94, 23, 12, 92, 25, 83, 48, 17, 68, 31, 34, 15, 51, 86, 82]
+train data size:  torch.Size([1200, 3, 32, 32])
+test set size:  torch.Size([6000, 3, 32, 32])
+[2022-11-29 21:43:06] Evaluate_00: epoch = 1000 train time = 336 s train loss = 0.014906 train acc = 1.0000, test acc = 0.3507
+[2022-11-29 21:48:34] Evaluate_01: epoch = 1000 train time = 326 s train loss = 0.018603 train acc = 0.9992, test acc = 0.3488
+[2022-11-29 21:54:03] Evaluate_02: epoch = 1000 train time = 328 s train loss = 0.018133 train acc = 0.9992, test acc = 0.3435
+Evaluate 3 random ConvNet, mean = 0.3477 std = 0.0030
+
+-----------------------------
+method herding seed 4 step 3 
+classes_seen:  [20, 10, 96, 16, 63, 24, 53, 97, 41, 47, 43, 2, 95, 26, 13, 37, 14, 29, 35, 54, 80, 4, 81, 76, 85, 60, 5, 70, 71, 19, 65, 62, 27, 75, 61, 78, 18, 88, 7, 39, 6, 77, 11, 59, 22, 94, 23, 12, 92, 25, 83, 48, 17, 68, 31, 34, 15, 51, 86, 82, 28, 64, 67, 33, 45, 42, 40, 32, 91, 74, 49, 8, 30, 99, 66, 56, 84, 73, 79, 21]
+train data size:  torch.Size([1600, 3, 32, 32])
+test set size:  torch.Size([8000, 3, 32, 32])
+[2022-11-29 22:01:52] Evaluate_00: epoch = 1000 train time = 461 s train loss = 0.024572 train acc = 1.0000, test acc = 0.3131
+[2022-11-29 22:09:33] Evaluate_01: epoch = 1000 train time = 459 s train loss = 0.025297 train acc = 0.9994, test acc = 0.2994
+[2022-11-29 22:15:56] Evaluate_02: epoch = 1000 train time = 382 s train loss = 0.021740 train acc = 0.9994, test acc = 0.3121
+Evaluate 3 random ConvNet, mean = 0.3082 std = 0.0063
+
+-----------------------------
+method herding seed 4 step 4 
+classes_seen:  [20, 10, 96, 16, 63, 24, 53, 97, 41, 47, 43, 2, 95, 26, 13, 37, 14, 29, 35, 54, 80, 4, 81, 76, 85, 60, 5, 70, 71, 19, 65, 62, 27, 75, 61, 78, 18, 88, 7, 39, 6, 77, 11, 59, 22, 94, 23, 12, 92, 25, 83, 48, 17, 68, 31, 34, 15, 51, 86, 82, 28, 64, 67, 33, 45, 42, 40, 32, 91, 74, 49, 8, 30, 99, 66, 56, 84, 73, 79, 21, 89, 0, 3, 52, 38, 44, 93, 36, 57, 90, 98, 58, 9, 50, 72, 87, 1, 69, 55, 46]
+train data size:  torch.Size([2000, 3, 32, 32])
+test set size:  torch.Size([10000, 3, 32, 32])
+[2022-11-29 22:20:30] Evaluate_00: epoch = 1000 train time = 267 s train loss = 0.026777 train acc = 0.9995, test acc = 0.2728
+[2022-11-29 22:24:42] Evaluate_01: epoch = 1000 train time = 251 s train loss = 0.011423 train acc = 1.0000, test acc = 0.2729
+[2022-11-29 22:28:59] Evaluate_02: epoch = 1000 train time = 256 s train loss = 0.028673 train acc = 0.9985, test acc = 0.2779
+Evaluate 3 random ConvNet, mean = 0.2745 std = 0.0024
+
+
+
+5 step learning herding perforamnce:
+& 48.4$\pm$3.2  & 37.4$\pm$2.0  & 33.5$\pm$1.6  & 30.5$\pm$0.7  & 27.9$\pm$0.4  
+Done

@@ -12,10 +12,10 @@ def main():
     parser.add_argument('--method', type=str, default='random', help='random/herding/DSA/DM')
     parser.add_argument('--dataset', type=str, default='CIFAR100', help='dataset')
     parser.add_argument('--model', type=str, default='ConvNet', help='model')
-    parser.add_argument('--ipc', type=int, default=20, help='image(s) per class')
+    parser.add_argument('--ipc', type=int, default=10, help='image(s) per class')
     parser.add_argument('--steps', type=int, default=5, help='5/10-step learning')
-    parser.add_argument('--num_eval', type=int, default=3, help='evaluation number')
-    parser.add_argument('--epoch_eval_train', type=int, default=1000, help='epochs to train a model with synthetic data')
+    parser.add_argument('--num_eval', type=int, default=1, help='evaluation number')
+    parser.add_argument('--epoch_eval_train', type=int, default=300, help='epochs to train a model with synthetic data')
     parser.add_argument('--lr_net', type=float, default=0.01, help='learning rate for updating network parameters')
     parser.add_argument('--batch_train', type=int, default=256, help='batch size for training networks')
     parser.add_argument('--data_path', type=str, default='./../data', help='dataset path')
@@ -56,7 +56,9 @@ def main():
     print('method: ', args.method)
     results = np.zeros((args.steps, 5*args.num_eval))
 
-    for seed_cl in range(5):
+    # for seed_cl in range(5):
+    for step_ in [0, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]:
+        seed_cl = 0
         num_classes_step = num_classes // args.steps
         np.random.seed(seed_cl)
         class_order = np.random.permutation(num_classes).tolist()
@@ -75,17 +77,65 @@ def main():
                 labels_train_all += [torch.tensor([c for c in classes_current for i in range(args.ipc)], dtype=torch.long, device=args.device)]
 
         elif args.method == 'herding':
-            fname = os.path.join(args.data_path, 'metasets', 'cl_data', 'cl_herding_CIFAR100_ConvNet_20ipc_%dsteps_seed%d.pt'%(args.steps, seed_cl))
-            data = torch.load(fname, map_location='cpu')['data']
+            # fname = os.path.join(args.data_path, 'metasets', 'cl_data', 'cl_herding_CIFAR100_ConvNet_20ipc_%dsteps_seed%d.pt'%(args.steps, seed_cl))
+            fname = os.path.join(args.data_path, 'metasets', 'cl_data', 'FGSM_CIFAR100_ConvNet_10ipc_301steps_seed0.pt')
+            # fname = os.path.join(args.data_path, 'metasets', 'cl_data', 'Fewit_CIFAR100_ConvNet_10ipc_11steps_seed0.pt')
+            data = torch.load(fname, map_location='cpu')#['data']
+
             images_train_all = [data[step][0] for step in range(args.steps)]
             labels_train_all = [data[step][1] for step in range(args.steps)]
+            
             print('use data: ', fname)
+
+        elif args.method == 'ours':
+            if step_ == 0:
+                fname = os.path.join(args.data_path, 'metasets', 'cl_data', 'cl_herding_CIFAR100_ConvNet_20ipc_%dsteps_seed%d.pt'%(args.steps, seed_cl))
+                data = torch.load(fname, map_location='cpu')['data']
+                images_train_all = [data[step][0][::2] for step in range(args.steps)]
+                labels_train_all = [data[step][1][::2] for step in range(args.steps)]
+
+                continue
+
+            else:
+                # fname = os.path.join(args.data_path, 'metasets', 'cl_data', 'FGSM_CIFAR100_ConvNet_10ipc_%dsteps_seed0.pt'%(step_+1))
+                fname = os.path.join(args.data_path, 'metasets', 'cl_data', 'Fewit_CIFAR100_ConvNet_10ipc_%dsteps_seed0.pt'%(step_+1))
+                data = torch.load(fname, map_location='cpu')#['data']
+                images_train_all = [data[step][0] for step in range(args.steps)]
+                labels_train_all = [data[step][1] for step in range(args.steps)]
+
+            print('use data: ', fname)
+            print('=========================================')
+            print('step: ', step_)
+
+        elif args.method == 'mix':
+            if step_ == 0:
+                continue
+            fname1 = os.path.join(args.data_path, 'metasets', 'cl_data', 'cl_herding_CIFAR100_ConvNet_20ipc_%dsteps_seed%d.pt'%(args.steps, seed_cl))
+            data1 = torch.load(fname1, map_location='cpu')['data']
+
+            fname2 = os.path.join(args.data_path, 'metasets', 'cl_data', 'cl_res_DSA_CIFAR100_ConvNet_20ipc_%dsteps_seed%d.pt'%(args.steps, seed_cl))
+            data2 = torch.load(fname2, map_location='cpu')['data']
+
+            images_train_1 = [data1[step][0][::4] for step in range(args.steps)]
+            labels_train_1 = [data1[step][1][::4] for step in range(args.steps)]
+            images_train_2 = [data2[step][0][::4] for step in range(args.steps)]
+            labels_train_2 = [data2[step][1][::4] for step in range(args.steps)]
+
+            images_train_all = []
+            labels_train_all = []
+
+            for step in range(args.steps):
+                images_train_all += [torch.cat([images_train_1[step], images_train_2[step]], dim=0)]
+                labels_train_all += [torch.cat([labels_train_1[step], labels_train_2[step]], dim=0)]
+
+            print('=========================================')
+            print('step: ', step_)
 
         elif args.method == 'DSA':
             fname = os.path.join(args.data_path, 'metasets', 'cl_data', 'cl_res_DSA_CIFAR100_ConvNet_20ipc_%dsteps_seed%d.pt'%(args.steps, seed_cl))
             data = torch.load(fname, map_location='cpu')['data']
-            images_train_all = [data[step][0] for step in range(args.steps)]
-            labels_train_all = [data[step][1] for step in range(args.steps)]
+            images_train_all = [data[step][0][::2] for step in range(args.steps)]
+            labels_train_all = [data[step][1][::2] for step in range(args.steps)]
             print('use data: ', fname)
 
         elif args.method == 'DM':

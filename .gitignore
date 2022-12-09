@@ -5,3 +5,4 @@
 # Ignore all files in the build directory
 data/
 DatasetCondensation/data/
+.idea/
